@@ -1,0 +1,385 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Data Types in Python   (Mutable &  Immutable)\n",
+        "In Python, data types can be categorized as mutable and immutable based on whether their values can be changed after they are created.\n",
+        "Mutable\n",
+        "Immutable\n",
+        "\n",
+        "**1. Mutable**\n",
+        "Definition: Mutable data types allow modifications after their creation. You can change, add, or remove elements without creating a new object.\n",
+        "Examples: Lists, Dictionaries, Sets.\n",
+        "\n",
+        "**2. Immutable**\n",
+        "Definition: Immutable data types do not allow any modifications after their creation. If you attempt to change them, you need to create a new object.\n",
+        "Examples: Strings, Tuples, Integers"
+      ],
+      "metadata": {
+        "id": "SVt6dIirvI-h"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Immutable Data Types**\n",
+        "\n",
+        "# 1. Tuple - A tuple is an ordered, immutable collection of items. Once created, the items in a tuple cannot be changed."
+      ],
+      "metadata": {
+        "id": "DYllNB-AARYo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Creating a tuple\n",
+        "thistuple = (\"apple\", \"banana\", \"cherry\")\n",
+        "print(thistuple)  # Output: ('apple', 'banana', 'cherry')\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9xru9Dx3PXHT",
+        "outputId": "bd95f8aa-74cc-4682-875b-c7aed8d33e52"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('apple', 'banana', 'cherry')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Accessing items by index\n",
+        "thistuple = (\"apple\", \"banana\", \"cherry\")\n",
+        "print(thistuple[1])  # Output: banana\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "F2TadohqQpSE",
+        "outputId": "d5d3367d-2c6d-4c43-a82b-9c96d94058b0"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "banana\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Tuples are immutable, so you cannot change their values once created\n",
+        "thistuple = (\"apple\", \"banana\", \"cherry\")\n",
+        "# Uncommenting the next line will raise an error\n",
+        "# thistuple[1] = \"blackcurrant\"  # TypeError: 'tuple' object does not support item assignment\n"
+      ],
+      "metadata": {
+        "id": "WTc0eCp0QsvQ"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Using len() to determine the number of items in a tuple\n",
+        "thistuple = (\"apple\", \"banana\", \"cherry\")\n",
+        "print(len(thistuple))  # Output: 3\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rwE51Xr3Qwps",
+        "outputId": "9856ce05-937c-4071-ceef-0d7b2980f634"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Tuples are immutable, so you cannot add items once created\n",
+        "thistuple = (\"apple\", \"banana\", \"cherry\")\n",
+        "# Uncommenting the next line will raise an error\n",
+        "# thistuple[3] = \"orange\"  # TypeError: 'tuple' object does not support item assignment\n"
+      ],
+      "metadata": {
+        "id": "_SEloty1Q2Hu"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Tuples are immutable, so you cannot remove items, but you can delete the entire tuple\n",
+        "thistuple = (\"apple\", \"banana\", \"cherry\")\n",
+        "del thistuple\n",
+        "# Uncommenting the next line will raise an error because the tuple no longer exists\n",
+        "# print(thistuple)  # NameError: name 'thistuple' is not defined\n"
+      ],
+      "metadata": {
+        "id": "aKeFnwuHQ5J2"
+      },
+      "execution_count": 7,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **2. STRING**\n",
+        "\n",
+        "**A string is an immutable sequence of characters. Once created, the characters in a string cannot be changed.**"
+      ],
+      "metadata": {
+        "id": "x4Qkw3pXFYRS"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Creating a string\n",
+        "a = \"Hello World!!\"\n",
+        "print(a)            # Output: Hello World!!\n",
+        "print(type(a))      # Output: <class 'str'>\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xOilegLpRRyV",
+        "outputId": "40159818-b054-484b-ff6d-62b1cea07328"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello World!!\n",
+            "<class 'str'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Using the find() method to find the first occurrence of a substring\n",
+        "a = \"Hello World!\"\n",
+        "print(a.find(\"e\"))        # Output: 1\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6nPGbx9ORqtK",
+        "outputId": "bc3c97d2-28ec-4a07-c4c9-defea451c0fb"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Using the lower() method to convert the string to lowercase\n",
+        "a = \"Hello World !\"\n",
+        "print(a.lower())  # Output: hello world !\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NGd1XDwQRwtl",
+        "outputId": "6dbbd816-c20c-4e8c-e527-67c454abd6b4"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello world !\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Using the upper() method to convert the string to uppercase\n",
+        "a = \"Hello World !\"\n",
+        "print(a.upper())  # Output: HELLO WORLD !\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "s3JdfCY_Rx6S",
+        "outputId": "1cfa64c5-4a95-4595-b16f-d9802fdfebff"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "HELLO WORLD !\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Using the len() method to get the length of the string\n",
+        "a = \"Hello World !\"\n",
+        "print(len(a))     # Output: 13\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mkRxVu7vR2UK",
+        "outputId": "f5891d38-12b5-4923-a43d-634393d4f8c7"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "13\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Using the replace() method to replace a substring with another substring\n",
+        "a = \"Hello World !\"\n",
+        "print(a.replace(\"H\", \"J\"))  # Output: Jello World !\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "O1nZOqlnR6RJ",
+        "outputId": "d542575b-bdb0-4eb0-bfe7-6f67e4aed60a"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Jello World !\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**3. NUMERIC**\n",
+        "\n",
+        "1. Integer\n",
+        "2.float\n",
+        "3.complex\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "HR2o6dWlF089"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 1    # int\n",
+        "y = 2.8  # float\n",
+        "z = 1j   # complex\n",
+        "\n",
+        "print(type(x))  # Output: <class 'int'>\n",
+        "print(type(y))  # Output: <class 'float'>\n",
+        "print(type(z))  # Output: <class 'complex'>\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-5sa83pOSkRY",
+        "outputId": "01f94121-df27-4432-e3ca-deba2de8121d"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'complex'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "XhuSMfYNSnsN"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
