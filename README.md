@@ -1,5 +1,7 @@
 Python-for-Beginners
-Welcome to Python-for-Beginners! This repository provides a comprehensive, step-by-step guide to learning Python, specifically tailored for beginners. With ten detailed modules, you’ll build a strong foundation in Python programming, from basic syntax to handling exceptions.
+
+
+This repository provides a comprehensive, step-by-step guide to learning Python, specifically tailored for beginners. With ten detailed modules, you’ll build a strong foundation in Python programming, from basic syntax to handling exceptions.
 
 Modules Overview
 Module 1: Basics of Python
@@ -31,3 +33,6 @@ Learn how to define and use functions in Python, understanding function paramete
 
 Module 10: Exception and Error Handling
 Master the basics of exception handling to make your code more robust. Learn to catch and handle errors with try, except, finally, and raise.
+
+Practice Questions
+Each module comes with a set of practice questions to reinforce the concepts covered. These exercises range from simple syntax and operations to more complex problem-solving tasks, ensuring you get plenty of hands-on practice with each topic.
