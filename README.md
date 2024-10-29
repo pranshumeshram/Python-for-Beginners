@@ -55,3 +55,4 @@ Master the basics of exception handling to make your code more robust. Learn to 
 
 Practice Questions
 
+Each module comes with a set of practice questions to reinforce the concepts covered. These exercises range from simple syntax and operations to more complex problem-solving tasks, ensuring you get plenty of hands-on practice with each topic.
